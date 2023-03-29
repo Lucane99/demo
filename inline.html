@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      span {
+        background-color: rgb(246, 170, 18);
+      }
+
+      h1 {
+        background-color: burlywood;
+      }
+
+      li {
+        list-style-image: url('Assets/images/4829869_arrow_next_right_icon.png');
+
+      }
+
+      img {
+        filter: blur(01.95px);
+        filter: grayscale(50%);
+        filter: contrast(10%);
+      }
+
+      .container {
+        border: 1px solid black;
+        width: 500px;
+        color: white;
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+        column-gap: 20px;
+
+      }
+
+      .box1 {
+        background-color: rgb(251, 13, 13);
+        flex-grow: 1;
+        /* order: 4; */
+        flex-basis: 100px;
+      }
+
+
+      .box2 {
+        background-color: rgb(63, 241, 3);
+        flex-shrink: 2;
+        /* order: 3; */
+      }
+
+      .box3 {
+        background-color: rgb(139, 6, 248);
+      }
+
+      .box4 {
+        background-color: rgb(110, 4, 11);
+      }
+
+      .box5 {
+        background-color: rgb(70, 95, 106);
+      }
+
+      .i {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span>hello Inline</span>
+    <h1>hello</h1>
+    <!-- <div class="box">
+      <!-- <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+        alt=""> -->
+    </div> -->
+
+    <ul>
+      <li>Arsenal</li>
+      <li>Mancity</li>
+      <li>Manunited</li>
+
+
+    </ul>
+    <div class="container">
+      <div class="box1 i">one</div>
+      <div class="box2 i">two</div>
+      <div class="box3 i">three</div>
+      <div class="box4 i">four</div>
+      <div class="box5 i">five</div>
+    </div>
+    <div class="menu">
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      .box p::before {
+        content: "important";
+        color: black;
+        font-weight: bold;
+      }
+
+      .box p:hover::after {
+        content: "important";
+        color: black;
+        font-weight: bold;
+      }
+
+
+      a:hover {
+        background-color: blueviolet;
+      }
+
+      a:active {
+        color: black;
+      }
+
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+      body {
+        font-family: 'Nunito', sans-serif;
+        color: blueviolet;
+        font-size: 20px;
+      }
+
+      .box {
+        background-color: linen;
+        width: 300px;
+        height: 150px;
+        overflow: hidden;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: nowrap;
+        text-overflow: clip;
+
+
+      }
+
+      :root {
+        --main-color: #202124;
+      }
+
+      body {
+        color: var(--main-color);
+      }
+
+      .box p {
+        font-size: 1em;
+        text-transform: uppercase;
+        text-indent: 10px;
+        /* letter-spacing: 20px; */
+        /* word-spacing: 10px; */
+        line-height: 2rem;
+        text-decoration: overline wavy black;
+        text-align: justify;
+
+
+      }
+
+      @font-face {
+        font-family: 'Nunito', sans-serif;
+        src: url(Assets/fonts/Nunito-Regular.ttf);
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="mailto:rabyn900@gmail.com?subject=hello" method="post" style="width: 40%;" enctype="text/plain">
+      <fieldset>
+        <legend>Form</legend>
+
+        <p>
+        <h2>Select your gender</h2>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        </p>
+        <p>
+        <h2>Select Hobbies</h2>
+        <label for="dance">Dance</label>
+        <input type="checkbox" id="dance" name="dance" value="dance">
+        <label for="sing">Sing</label>
+        <input type="checkbox" id="sing" name="sing" value="sing" checked>
+        <input type="checkbox" id="sing" name="sing" value="sing"><input type="checkbox" id="dance" name="dance"
+          value="dance">
+        <label for="fav">Favourite</label>
+        <select name="fav" id="fav">
+          <optgroup label="Iced Coffee">
+            <option value="iced">Iced lattee</option>
+            <option value="iced tea">Iced tea</option>
+          </optgroup>
+          </option>e="latte">latte</option>
+          <option value="mocha">mocha</option>
+          <option value="cappucinno" selected>cappucinno</option>
+          <option value="expresso">expresso</option>
+        </select>
+        <input type="checkbox" id="sing" name="sing" value="sing">
+        <input type="checkbox" id="sing" name="sing" value="sing">
+        </p>
+        <p>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+        </p>
+        <p>
+          <label for="image">Select File</label>
+          <input type="file" accept="image/*" name="image" id="image">
+        </p>
+        <p>
+          <label for="text">Message</label>
+          <br>
+          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <div class="box">
+          <a href="">Hello world</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, aliquid!</p>
+        </div>
+
+      </fieldset>
+    </form>
+    <div class="box">
+      <p>Lorem ipsum dolor sit ametloooooooonnnnnggggggggggggggggg consectetur adipisicing elit. Qui illum eum dolores
+        neque eveniet fugiat, natus hic
+        assumenda aperiam, deleniti nobis? Delectus dolor rerum maxime sunt dolorem impedit consectetur animi maiores
+        quo, nostrum mollitia! Minus quisquam ut suscipit eligendi facilis at maiores sed, ipsa alias tenetur distinctio
+        fugiat deleniti eveniet?</p>
+    </div>
+
+  </body>
+
+</html>
